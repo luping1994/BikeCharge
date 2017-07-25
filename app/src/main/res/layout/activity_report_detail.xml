@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbarheight"
+        android:background="@color/colorPrimary">
+
+        <RelativeLayout
+            android:id="@+id/backRl"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/backImg"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/ic_back" />
+
+            <TextView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/backImg"
+                android:gravity="center"
+                android:text="返回"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="充电报告"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <net.suntrans.bikecharge.view.ScrollChildSwipeRefreshLayout
+
+        android:id="@+id/refreshlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <View
+                    android:background="@color/bgcolor"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="56.0dip"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/bb"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16.0dip"
+                        android:src="@drawable/bianhao" />
+
+                    <TextView
+                        style="@style/setting_about_item_text"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10.0dip"
+                        android:layout_toRightOf="@+id/bb"
+                        android:text="桩编号" />
+
+                    <TextView
+                        android:id="@+id/bianhao"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:gravity="center|right"
+                        android:text="--"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <ImageView
+                    style="@style/line_horizontal_middle_gray"
+                    android:layout_marginLeft="13.0dip"
+                    android:layout_marginRight="13.0dip" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+
+                    android:layout_height="56.0dip"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16.0dip"
+                        android:src="@drawable/icon_time" />
+
+                    <TextView
+                        style="@style/setting_about_item_text"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10.0dip"
+                        android:layout_toRightOf="@+id/bb"
+                        android:text="开始时间" />
+
+                    <TextView
+                        android:id="@+id/startTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:gravity="center|right"
+                        android:text="--"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <ImageView
+                    style="@style/line_horizontal_middle_gray"
+                    android:layout_marginLeft="13.0dip"
+                    android:layout_marginRight="13.0dip" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="56.0dip"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16.0dip"
+                        android:src="@drawable/icon_time" />
+
+                    <TextView
+                        style="@style/setting_about_item_text"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10.0dip"
+                        android:layout_toRightOf="@+id/bb"
+                        android:text="结束时间" />
+
+                    <TextView
+                        android:id="@+id/endTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:gravity="center|right"
+                        android:text="--"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <ImageView
+                    style="@style/line_horizontal_middle_gray"
+                    android:layout_marginLeft="13.0dip"
+                    android:layout_marginRight="13.0dip" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="56.0dip"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16.0dip"
+                        android:src="@drawable/icon_stop" />
+
+                    <TextView
+                        style="@style/setting_about_item_text"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10.0dip"
+                        android:layout_toRightOf="@+id/bb"
+                        android:text="结束方式" />
+
+                    <TextView
+                        android:id="@+id/endType"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:gravity="center|right"
+                        android:text="--"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <ImageView
+                    style="@style/line_horizontal_middle_gray"
+                    android:layout_marginLeft="13.0dip"
+                    android:layout_marginRight="13.0dip" />
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="56.0dip"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16.0dip"
+                        android:src="@drawable/icon_dianbiao" />
+
+                    <TextView
+                        style="@style/setting_about_item_text"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10.0dip"
+                        android:layout_toRightOf="@+id/bb"
+                        android:text="电表开始度数" />
+
+                    <TextView
+                        android:id="@+id/meterStartDegrees"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:gravity="center|right"
+                        android:text="--"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <ImageView
+                    style="@style/line_horizontal_middle_gray"
+                    android:layout_marginLeft="13.0dip"
+                    android:layout_marginRight="13.0dip" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="56.0dip"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16.0dip"
+                        android:src="@drawable/icon_money" />
+
+                    <TextView
+                        style="@style/setting_about_item_text"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10.0dip"
+                        android:layout_toRightOf="@+id/bb"
+                        android:text="充入金额" />
+
+                    <TextView
+                        android:id="@+id/money"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:gravity="center|right"
+                        android:text="--"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <ImageView
+                    style="@style/line_horizontal_middle_gray"
+                    android:layout_marginLeft="13.0dip"
+                    android:layout_marginRight="13.0dip" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="56.0dip"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16.0dip"
+                        android:src="@drawable/icon_dianliang" />
+
+                    <TextView
+                        style="@style/setting_about_item_text"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10.0dip"
+                        android:layout_toRightOf="@+id/bb"
+                        android:text="消耗电量" />
+
+                    <TextView
+                        android:id="@+id/consumeDegrees"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:gravity="center|right"
+                        android:text="--"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <ImageView
+                    style="@style/line_horizontal_middle_gray"
+                    android:layout_marginLeft="13.0dip"
+                    android:layout_marginRight="13.0dip" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="56.0dip"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16.0dip"
+                        android:src="@drawable/icon_yuer" />
+
+                    <TextView
+                        style="@style/setting_about_item_text"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10.0dip"
+                        android:layout_toRightOf="@+id/bb"
+                        android:text="消费金额" />
+
+                    <TextView
+                        android:id="@+id/consumeMoney"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:gravity="center|right"
+                        android:text="--"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:text="电流曲线变化"
+                    android:textSize="16sp" />
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/chart1"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_marginBottom="50dp"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin" />
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </net.suntrans.bikecharge.view.ScrollChildSwipeRefreshLayout>
+</LinearLayout>

@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbarheight"
+        android:background="@color/colorPrimary">
+
+        <RelativeLayout
+            android:id="@+id/backRl"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/backImg"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/ic_back" />
+
+            <TextView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/backImg"
+                android:gravity="center"
+                android:text="返回"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="实名认证"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:background="?attr/selectableItemBackground"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_alignParentRight="true"
+            android:id="@+id/commit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="提交"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+   <android.support.v4.widget.NestedScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <LinearLayout
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="45dp"
+               android:layout_marginTop="40dp"
+               android:background="@color/white"
+               android:orientation="horizontal">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                   android:gravity="center"
+                   android:text="姓名"
+                   android:textColor="@color/black"
+                   android:textSize="16sp" />
+
+               <net.suntrans.bikecharge.view.EditView
+                   android:id="@+id/name"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                   android:layout_marginRight="@dimen/activity_horizontal_margin"
+                   android:background="@null"
+                   android:hint="请输入姓名"
+                   android:inputType="textPersonName"
+                   android:maxLines="1"
+                   android:textSize="16sp" />
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="45dp"
+               android:layout_marginTop="@dimen/activity_vertical_margin"
+               android:background="@color/white"
+               android:orientation="horizontal">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                   android:gravity="center"
+                   android:text="身份证"
+                   android:textColor="@color/black"
+                   android:textSize="16sp" />
+
+               <net.suntrans.bikecharge.view.EditView
+                   android:id="@+id/id"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                   android:layout_marginRight="@dimen/activity_horizontal_margin"
+                   android:background="@null"
+                   android:digits="1234567890x"
+                   android:hint="请输入身份证号码"
+                   android:maxLines="1"
+                   android:textSize="16sp" />
+           </LinearLayout>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="@dimen/activity_horizontal_margin"
+               android:layout_marginTop="@dimen/activity_vertical_margin"
+               android:text="请上传身份证正面图片"
+               android:textSize="16sp" />
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="150dp"
+               android:layout_marginTop="8dp"
+               android:background="@color/white"
+               android:paddingLeft="@dimen/activity_horizontal_margin"
+               android:paddingRight="@dimen/activity_horizontal_margin">
+
+               <RelativeLayout
+                   android:id="@+id/chooseIdRront"
+                   android:layout_width="128dp"
+                   android:layout_height="128dp"
+                   android:layout_centerVertical="true"
+                   android:background="@color/bgcolor">
+
+                   <LinearLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_centerInParent="true"
+                       android:gravity="center"
+                       android:orientation="vertical">
+
+                       <ImageView
+                           android:layout_width="40dp"
+                           android:layout_height="40dp"
+                           android:src="@drawable/icon_choose_pic" />
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="选择图片" />
+                   </LinearLayout>
+               </RelativeLayout>
+
+               <ImageView
+                   android:id="@+id/picFront"
+                   android:layout_width="128dp"
+                   android:layout_height="128dp"
+                   android:layout_centerVertical="true"
+                   android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                   android:layout_toRightOf="@+id/chooseIdRront" />
+           </RelativeLayout>
+
+           <TextView
+               android:id="@+id/textView"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="@dimen/activity_horizontal_margin"
+               android:layout_marginTop="@dimen/activity_vertical_margin"
+               android:text="请上传身份证反面图片"
+               android:textSize="16sp" />
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="150dp"
+               android:layout_marginTop="8dp"
+               android:background="@color/white"
+               android:paddingLeft="@dimen/activity_horizontal_margin"
+               android:paddingRight="@dimen/activity_horizontal_margin">
+
+               <RelativeLayout
+                   android:id="@+id/chooseIdRear"
+                   android:layout_width="128dp"
+                   android:layout_height="128dp"
+                   android:layout_centerVertical="true"
+                   android:background="@color/bgcolor">
+
+                   <LinearLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_centerInParent="true"
+                       android:gravity="center"
+                       android:orientation="vertical">
+
+                       <ImageView
+                           android:layout_width="40dp"
+                           android:layout_height="40dp"
+                           android:src="@drawable/icon_choose_pic" />
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="选择图片" />
+                   </LinearLayout>
+               </RelativeLayout>
+
+               <ImageView
+                   android:id="@+id/picRear"
+                   android:layout_width="128dp"
+                   android:layout_height="128dp"
+                   android:layout_centerVertical="true"
+                   android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                   android:layout_toRightOf="@+id/chooseIdRear" />
+           </RelativeLayout>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="@dimen/activity_horizontal_margin"
+               android:layout_marginTop="@dimen/activity_vertical_margin"
+               android:text="请上传电动车图片"
+               android:textSize="16sp" />
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="150dp"
+               android:layout_marginTop="8dp"
+               android:background="@color/white"
+               android:paddingLeft="@dimen/activity_horizontal_margin"
+               android:paddingRight="@dimen/activity_horizontal_margin">
+
+               <RelativeLayout
+                   android:id="@+id/chooBikePic"
+                   android:layout_width="128dp"
+                   android:layout_height="128dp"
+                   android:layout_centerVertical="true"
+                   android:background="@color/bgcolor">
+
+                   <LinearLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_centerInParent="true"
+                       android:gravity="center"
+                       android:orientation="vertical">
+
+                       <ImageView
+                           android:layout_width="40dp"
+                           android:layout_height="40dp"
+                           android:src="@drawable/icon_choose_pic" />
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="选择图片" />
+                   </LinearLayout>
+               </RelativeLayout>
+
+               <ImageView
+                   android:id="@+id/picBike"
+                   android:layout_width="128dp"
+                   android:layout_height="128dp"
+                   android:layout_centerVertical="true"
+                   android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                   android:layout_toRightOf="@+id/chooBikePic" />
+           </RelativeLayout>
+       </LinearLayout>
+   </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

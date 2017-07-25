@@ -1,0 +1,6 @@
+<resources>
+    <string name="rationale_ask_again">您已拒绝了相关权限,应用将无法正确地运行.需要您打开设置并手动地修改权限.</string>
+    <string name="title_settings_dialog">权限拒绝</string>
+    <string name="exit">退出应用</string>
+    <string name="ok">开始申请</string>
+</resources>

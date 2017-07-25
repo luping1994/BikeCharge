@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "E:\\androidProject\\BikeCharge\\zxing-android-embedded\\build\\intermediates\\res\\merged\\release\\layout\\zxing_capture.xml",
+        "source": "E:\\androidProject\\BikeCharge\\zxing-android-embedded\\res\\layout\\zxing_capture.xml"
+    },
+    {
+        "merged": "E:\\androidProject\\BikeCharge\\zxing-android-embedded\\build\\intermediates\\res\\merged\\release\\layout\\zxing_barcode_scanner.xml",
+        "source": "E:\\androidProject\\BikeCharge\\zxing-android-embedded\\res\\layout\\zxing_barcode_scanner.xml"
+    }
+]

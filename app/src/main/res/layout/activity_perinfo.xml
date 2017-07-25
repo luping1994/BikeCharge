@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbarheight"
+        android:background="@color/colorPrimary">
+
+        <RelativeLayout
+            android:id="@+id/backRl"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/backImg"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/ic_back" />
+
+            <TextView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/backImg"
+                android:gravity="center"
+                android:text="返回"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="个人信息"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <net.suntrans.bikecharge.view.ScrollChildSwipeRefreshLayout
+        android:id="@+id/refreshlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp">
+
+                    <net.suntrans.bikecharge.view.CircleImageView
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/my_head" />
+                </RelativeLayout>
+
+                <View
+                    android:background="@color/bgcolor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1px" />
+
+                <RelativeLayout
+                    android:id="@+id/nikeNameRl"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="昵称"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/nickName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="8dp"
+                        android:layout_toLeftOf="@id/iconRight"
+                        android:gravity="center"
+                        android:text="未设置"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@id/iconRight"
+                        style="@style/setting_about_item_right_image"
+                        android:layout_width="42.659973dip"
+                        android:layout_height="42.659973dip"
+                        android:background="@drawable/icon_list_arrow"
+                        android:visibility="visible" />
+                </RelativeLayout>
+                <View
+                    android:background="@color/bgcolor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1px" />
+
+                <RelativeLayout
+                    android:id="@+id/sexRl"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="性别"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/sex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="8dp"
+                        android:layout_toLeftOf="@id/iconRight"
+                        android:gravity="center"
+                        android:text="未设置"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@id/iconRight"
+                        style="@style/setting_about_item_right_image"
+                        android:layout_width="42.659973dip"
+                        android:layout_height="42.659973dip"
+                        android:background="@drawable/icon_list_arrow"
+                        android:visibility="visible" />
+                </RelativeLayout> <View
+                    android:background="@color/bgcolor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1px" />
+
+                <RelativeLayout
+                    android:id="@+id/jobRl"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="职业"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/job"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="8dp"
+                        android:layout_toLeftOf="@id/iconRight"
+                        android:gravity="center"
+                        android:text="未设置"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@id/iconRight"
+                        style="@style/setting_about_item_right_image"
+                        android:layout_width="42.659973dip"
+                        android:layout_height="42.659973dip"
+                        android:background="@drawable/icon_list_arrow"
+                        android:visibility="visible" />
+                </RelativeLayout>
+                <View
+                    android:background="@color/bgcolor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1px" />
+
+                <RelativeLayout
+                    android:id="@+id/birthdayRl"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="生日"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/birthday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="8dp"
+                        android:layout_toLeftOf="@id/iconRight"
+                        android:gravity="center"
+                        android:text="未设置"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@id/iconRight"
+                        style="@style/setting_about_item_right_image"
+                        android:layout_width="42.659973dip"
+                        android:layout_height="42.659973dip"
+                        android:background="@drawable/icon_list_arrow"
+                        android:visibility="visible" />
+                </RelativeLayout>
+                <View
+                    android:background="@color/bgcolor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1px" />
+
+                <RelativeLayout
+                    android:id="@+id/cityRl"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="城市"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/city"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="8dp"
+                        android:layout_toLeftOf="@id/iconRight"
+                        android:gravity="center"
+                        android:text="未设置"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@id/iconRight"
+                        style="@style/setting_about_item_right_image"
+                        android:layout_width="42.659973dip"
+                        android:layout_height="42.659973dip"
+                        android:background="@drawable/icon_list_arrow"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1px"
+                    android:background="@color/bgcolor" />
+
+                <RelativeLayout
+                    android:id="@+id/bikeRl"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="电动车型号"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/bike"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="8dp"
+                        android:layout_toLeftOf="@id/iconRight"
+                        android:gravity="center"
+                        android:text="未设置"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@id/iconRight"
+                        style="@style/setting_about_item_right_image"
+                        android:layout_width="42.659973dip"
+                        android:layout_height="42.659973dip"
+                        android:background="@drawable/icon_list_arrow"
+                        android:visibility="visible" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+    </net.suntrans.bikecharge.view.ScrollChildSwipeRefreshLayout>
+</LinearLayout>

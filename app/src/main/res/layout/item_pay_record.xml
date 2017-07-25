@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="8dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="8dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <TextView
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:id="@+id/order_sn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="订单号:20202020020200202"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:maxLines="1"
+            android:ellipsize="end"
+
+            android:layout_marginTop="4dp"
+            android:id="@+id/created_at"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="交易时间:2016-11-11"
+            android:textSize="16sp" />
+
+        <TextView
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_marginTop="4dp"
+            android:id="@+id/pay_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="支付方式：支付宝"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/total_amount"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="+0.1"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 圆形头像控件-->
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension"/>
+        <attr name="border_color2" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="ColorFilterImage">
+        <attr name="ColorFilter1" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="CircleTextProgressbar">
+        <attr name="in_circle_color" format="color" />
+        <attr name="maxValue" format="integer"/>
+        <attr name="outLineColor" format="color"/>
+    </declare-styleable>
+</resources>

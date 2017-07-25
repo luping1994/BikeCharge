@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="my_content_view" type="id" />
+    <item name="main_tabLayout" type="id" />
+    <item name="toolbar" type="id" />
+    <item name="iconRight" type="id" />
+</resources>

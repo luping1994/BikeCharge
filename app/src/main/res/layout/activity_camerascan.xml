@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.journeyapps.barcodescanner.DecoratedBarcodeView
+                android:id="@+id/dbv_custom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:zxing_preview_scaling_strategy="fitXY"
+                app:zxing_use_texture_view="true">
+            </com.journeyapps.barcodescanner.DecoratedBarcodeView>
+        </FrameLayout>
+
+
+        <RelativeLayout
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:id="@+id/action_bar_id"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent">
+            <LinearLayout
+                android:background="?android:attr/selectableItemBackground"
+                android:id="@+id/back_btn_id"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center|left"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:id="@+id/main_person_id"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/ic_back" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/main_title_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="扫描二维码"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:visibility="invisible"
+                android:paddingLeft="16dp"
+                android:layout_alignParentRight="true"
+                android:id="@+id/xiangce"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="相册"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <Button
+        android:layout_marginBottom="40dp"
+        android:id="@+id/bt_splash"
+        android:onClick="switchFlashlight"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/turn_on_flashlight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

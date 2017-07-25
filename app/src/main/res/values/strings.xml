@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">三川智能充电</string>
+    <string name="nav_charge">充电</string>
+    <string name="nav_map">地图</string>
+    <string name="nav_mime">我的</string>
+    <string name="rationale_camera">需要打开摄像头的权限,否则无法扫描</string>
+    <string name="turn_off_flashlight">关闭闪光灯</string>
+    <string name="turn_on_flashlight">打开闪光灯</string>
+    <string name="company_name">Copyright © 2017 suntrans.All Rights Reserved</string>
+    <string name="exit_success">退出成功</string>
+    <string name="qvxiao">取消</string>
+    <string name="zhuxiao">是否注销登录?</string>
+    <string name="rationale_location">需要访问您的位置信息和本机识别码,否则app无法运行</string>
+    <string name="nav_battery">电池</string>
+    <string name="password">wuhanwuhanwuhan1</string>
+    <string name="iv">1234567890123456</string>
+    <string name="camera">拍照</string>
+    <string name="sdcard_no_exist">SD卡不存在</string>
+    <string name="camera_not_prepared">相机未准备好</string>
+    <string name="agent_addr">地址</string>
+
+</resources>

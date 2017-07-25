@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "E:\\androidProject\\BikeCharge\\easypermissions\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-v21\\abc_action_bar_item_background_material.xml",
+        "source": "C:\\Users\\Looney\\.android\\build-cache\\354bc707f662bf39f46329b86dc71d5001928b97\\output\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "E:\\androidProject\\BikeCharge\\easypermissions\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-v21\\abc_btn_colored_material.xml",
+        "source": "C:\\Users\\Looney\\.android\\build-cache\\354bc707f662bf39f46329b86dc71d5001928b97\\output\\res\\drawable-v21\\abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "E:\\androidProject\\BikeCharge\\easypermissions\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-v21\\abc_edit_text_material.xml",
+        "source": "C:\\Users\\Looney\\.android\\build-cache\\354bc707f662bf39f46329b86dc71d5001928b97\\output\\res\\drawable-v21\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "E:\\androidProject\\BikeCharge\\easypermissions\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-v21\\notification_action_background.xml",
+        "source": "C:\\Users\\Looney\\.android\\build-cache\\354bc707f662bf39f46329b86dc71d5001928b97\\output\\res\\drawable-v21\\notification_action_background.xml"
+    }
+]
