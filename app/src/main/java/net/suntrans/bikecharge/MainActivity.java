@@ -187,7 +187,6 @@ public class MainActivity extends RxAppCompatActivity {
                 UiUtils.showToast("再按一次退出");
             }
             return true;
-
         }
         return super.onKeyDown(keyCode, event);
     }

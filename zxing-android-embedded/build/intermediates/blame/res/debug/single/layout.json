@@ -4,6 +4,14 @@
         "source": "E:\\androidProject\\BikeCharge\\zxing-android-embedded\\res\\layout\\zxing_barcode_scanner.xml"
     },
     {
+        "merged": "E:\\AndroidProject\\BikeCharge\\zxing-android-embedded\\build\\intermediates\\res\\merged\\debug\\layout\\zxing_capture.xml",
+        "source": "E:\\AndroidProject\\BikeCharge\\zxing-android-embedded\\res\\layout\\zxing_capture.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\BikeCharge\\zxing-android-embedded\\build\\intermediates\\res\\merged\\debug\\layout\\zxing_barcode_scanner.xml",
+        "source": "E:\\AndroidProject\\BikeCharge\\zxing-android-embedded\\res\\layout\\zxing_barcode_scanner.xml"
+    },
+    {
         "merged": "E:\\androidProject\\BikeCharge\\zxing-android-embedded\\build\\intermediates\\res\\merged\\debug\\layout\\zxing_capture.xml",
         "source": "E:\\androidProject\\BikeCharge\\zxing-android-embedded\\res\\layout\\zxing_capture.xml"
     }

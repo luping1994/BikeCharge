@@ -43,7 +43,6 @@ public class PayActivity extends BasedActivity {
     private EditView money;
     private Button button;
     private IWXAPI wxapi;
-    private static final String WXPAY_ID = "wxd41679d9bf36e90d";
     private LoadingDialog dialog;
     private Subscription subscribe;
 
@@ -52,7 +51,7 @@ public class PayActivity extends BasedActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pay);
 
-        wxapi = WXAPIFactory.createWXAPI(this, WXPAY_ID);
+        wxapi = WXAPIFactory.createWXAPI(this, Constants.APP_ID);
 
         mobile = (TextView) findViewById(R.id.mobile);
         money = (EditView) findViewById(R.id.money);
@@ -187,7 +186,7 @@ public class PayActivity extends BasedActivity {
 //                        System.out.println(payObj.toString());
                         dialog.dismiss();
                         if (wxapi == null) {
-                            wxapi = WXAPIFactory.createWXAPI(PayActivity.this, WXPAY_ID);
+                            wxapi = WXAPIFactory.createWXAPI(PayActivity.this, Constants.APP_ID);
                         }
                         wxapi.registerApp(Constants.APP_ID);
                         PayReq req = new PayReq();

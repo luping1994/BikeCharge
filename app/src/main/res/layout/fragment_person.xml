@@ -18,6 +18,17 @@
             android:text="我的"
             android:textColor="@color/white"
             android:textSize="18sp" />
+        <TextView
+            android:background="?attr/selectableItemBackground"
+            android:id="@+id/biaozhun"
+            android:layout_marginRight="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="收费标准"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
     </RelativeLayout>
 
     <net.suntrans.bikecharge.view.ScrollChildSwipeRefreshLayout

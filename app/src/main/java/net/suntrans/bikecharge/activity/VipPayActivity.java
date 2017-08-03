@@ -46,7 +46,6 @@ public class VipPayActivity extends BasedActivity {
     private TextView money;
     private Button button;
     private IWXAPI wxapi;
-    private static final String WXPAY_ID = "wxd41679d9bf36e90d";
     private LoadingDialog dialog;
     private Subscription subscribe;
     private boolean isGetYaJin = false;
@@ -55,7 +54,7 @@ public class VipPayActivity extends BasedActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vip_pay);
 
-        wxapi = WXAPIFactory.createWXAPI(this, WXPAY_ID);
+        wxapi = WXAPIFactory.createWXAPI(this, Constants.APP_ID);
 
         mobile = (TextView) findViewById(R.id.mobile);
         money = (TextView) findViewById(R.id.money);
@@ -143,7 +142,7 @@ public class VipPayActivity extends BasedActivity {
                         dialog.dismiss();
 
                         if (wxapi == null) {
-                            wxapi = WXAPIFactory.createWXAPI(VipPayActivity.this.getApplicationContext(), WXPAY_ID);
+                            wxapi = WXAPIFactory.createWXAPI(VipPayActivity.this.getApplicationContext(), Constants.APP_ID);
                         }
                         wxapi.registerApp(Constants.APP_ID);
                         PayReq req = new PayReq();

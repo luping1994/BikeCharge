@@ -7,8 +7,8 @@ android {
         applicationId "net.suntrans.bikecharge"
         minSdkVersion 16
         targetSdkVersion 25
-        versionCode 12
-        versionName "1.0.9"
+        versionCode 13
+        versionName "1.0.10"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
 
@@ -20,7 +20,7 @@ android {
 
         manifestPlaceholders = [
                 JPUSH_PKGNAME: applicationId,
-                JPUSH_APPKEY : "108eef70c6760b97adac3190", //JPush上注册的包名对应的appkey.
+                JPUSH_APPKEY : "56ec57e91e22cb694339b078", //JPush上注册的包名对应的appkey.
                 JPUSH_CHANNEL: "developer-default", //用户渠道统计的渠道名称
         ]
     }

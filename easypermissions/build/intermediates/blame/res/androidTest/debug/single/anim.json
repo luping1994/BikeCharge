@@ -4,6 +4,14 @@
         "source": "C:\\Users\\Looney\\.android\\build-cache\\354bc707f662bf39f46329b86dc71d5001928b97\\output\\res\\anim\\abc_slide_in_bottom.xml"
     },
     {
+        "merged": "E:\\AndroidProject\\BikeCharge\\easypermissions\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_popup_enter.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\5775ab582bcf23684219abed97f1f02c82aca925\\output\\res\\anim\\abc_popup_enter.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\BikeCharge\\easypermissions\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_slide_in_top.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\5775ab582bcf23684219abed97f1f02c82aca925\\output\\res\\anim\\abc_slide_in_top.xml"
+    },
+    {
         "merged": "E:\\androidProject\\BikeCharge\\easypermissions\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_fade_in.xml",
         "source": "C:\\Users\\Looney\\.android\\build-cache\\354bc707f662bf39f46329b86dc71d5001928b97\\output\\res\\anim\\abc_fade_in.xml"
     },
@@ -12,16 +20,36 @@
         "source": "C:\\Users\\Looney\\.android\\build-cache\\354bc707f662bf39f46329b86dc71d5001928b97\\output\\res\\anim\\abc_popup_enter.xml"
     },
     {
+        "merged": "E:\\AndroidProject\\BikeCharge\\easypermissions\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_popup_exit.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\5775ab582bcf23684219abed97f1f02c82aca925\\output\\res\\anim\\abc_popup_exit.xml"
+    },
+    {
         "merged": "E:\\androidProject\\BikeCharge\\easypermissions\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
         "source": "C:\\Users\\Looney\\.android\\build-cache\\354bc707f662bf39f46329b86dc71d5001928b97\\output\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\BikeCharge\\easypermissions\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_slide_in_bottom.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\5775ab582bcf23684219abed97f1f02c82aca925\\output\\res\\anim\\abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\BikeCharge\\easypermissions\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_slide_out_bottom.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\5775ab582bcf23684219abed97f1f02c82aca925\\output\\res\\anim\\abc_slide_out_bottom.xml"
     },
     {
         "merged": "E:\\androidProject\\BikeCharge\\easypermissions\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_slide_out_bottom.xml",
         "source": "C:\\Users\\Looney\\.android\\build-cache\\354bc707f662bf39f46329b86dc71d5001928b97\\output\\res\\anim\\abc_slide_out_bottom.xml"
     },
     {
+        "merged": "E:\\AndroidProject\\BikeCharge\\easypermissions\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\5775ab582bcf23684219abed97f1f02c82aca925\\output\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
+    },
+    {
         "merged": "E:\\androidProject\\BikeCharge\\easypermissions\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_fade_out.xml",
         "source": "C:\\Users\\Looney\\.android\\build-cache\\354bc707f662bf39f46329b86dc71d5001928b97\\output\\res\\anim\\abc_fade_out.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\BikeCharge\\easypermissions\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_slide_out_top.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\5775ab582bcf23684219abed97f1f02c82aca925\\output\\res\\anim\\abc_slide_out_top.xml"
     },
     {
         "merged": "E:\\androidProject\\BikeCharge\\easypermissions\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
@@ -32,11 +60,23 @@
         "source": "C:\\Users\\Looney\\.android\\build-cache\\354bc707f662bf39f46329b86dc71d5001928b97\\output\\res\\anim\\abc_slide_out_top.xml"
     },
     {
+        "merged": "E:\\AndroidProject\\BikeCharge\\easypermissions\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_fade_out.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\5775ab582bcf23684219abed97f1f02c82aca925\\output\\res\\anim\\abc_fade_out.xml"
+    },
+    {
         "merged": "E:\\androidProject\\BikeCharge\\easypermissions\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_popup_exit.xml",
         "source": "C:\\Users\\Looney\\.android\\build-cache\\354bc707f662bf39f46329b86dc71d5001928b97\\output\\res\\anim\\abc_popup_exit.xml"
     },
     {
+        "merged": "E:\\AndroidProject\\BikeCharge\\easypermissions\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_fade_in.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\5775ab582bcf23684219abed97f1f02c82aca925\\output\\res\\anim\\abc_fade_in.xml"
+    },
+    {
         "merged": "E:\\androidProject\\BikeCharge\\easypermissions\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_slide_in_top.xml",
         "source": "C:\\Users\\Looney\\.android\\build-cache\\354bc707f662bf39f46329b86dc71d5001928b97\\output\\res\\anim\\abc_slide_in_top.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\BikeCharge\\easypermissions\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\5775ab582bcf23684219abed97f1f02c82aca925\\output\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
     }
 ]

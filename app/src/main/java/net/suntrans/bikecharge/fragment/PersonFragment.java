@@ -110,6 +110,7 @@ public class PersonFragment extends RxFragment implements View.OnClickListener {
         view.findViewById(R.id.header).setOnClickListener(this);
         view.findViewById(R.id.vip).setOnClickListener(this);
         view.findViewById(R.id.message).setOnClickListener(this);
+        view.findViewById(R.id.biaozhun).setOnClickListener(this);
 //        view.findViewById(R.id.energy).setOnClickListener(this);
 
         subscribe = RxBus.getInstance().toObserverable(String.class)
@@ -377,6 +378,9 @@ public class PersonFragment extends RxFragment implements View.OnClickListener {
                 } else {
                     UiUtils.showToast("您还没有登录哦");
                 }
+                break;
+            case R.id.biaozhun:
+
                 break;
         }
     }
